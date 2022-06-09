@@ -7,7 +7,7 @@ const mission = () => {
     alert("Please Enter An Event");
   } else {
     const appendli = task.appendChild(document.createElement("li"));
-    appendli.innerHTML = input.value
+    appendli.innerHTML = input.value;
 
     const done = appendli.appendChild(document.createElement("i"));
     // console.log(done)
@@ -21,17 +21,22 @@ const mission = () => {
 
     trash.addEventListener("click", trashli);
     done.addEventListener("click", doneli);
-    function doneli(e) {
+    function doneli(e) { 
       appendli.style.textDecoration = "line-through";
       input.focus();
+      done.addEventListener("click", redoneli);
+      function redoneli(e) {
+        appendli.style.textDecoration = "none";
+      }
+      
     }
+
     function trashli(e) {
       e.target.parentElement.remove();
       input.focus();
     }
 
     input.focus();
-    
   }
 };
 
@@ -46,4 +51,3 @@ input.addEventListener("keydown", (e) => {
     add.click();
   }
 });
-
