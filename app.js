@@ -10,12 +10,17 @@ const mission = ()=>{
     }
     else{
         const appendli = task.appendChild(document.createElement("li"));
-        const done = appendli.appendChild(document.createElement('i'));
-        const trash = appendli.appendChild(document.createElement('i'));
+        appendli.innerHTML = input.value.charAt(0).toUpperCase() + input.value
+
+        const done = appendli.appendChild(document.createElement("i"));
+        // console.log(done)
+        const trash = appendli.appendChild(document.createElement("i"));
+        // console.log(trash)
+        
+        appendli.className = "appendli";
+        
         done.className = "fas fa-check";
         trash.className = "fas fa-trash-alt";
-        appendli.className = "appendli";
-        appendli.innerHTML = input.value
         input.value=''
 
         trash.addEventListener("click", trashli);
