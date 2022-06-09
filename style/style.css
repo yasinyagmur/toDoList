@@ -12,12 +12,10 @@ body {
   flex-direction: column; */
   justify-content: center;
   align-items: center;
-  margin-top: 20vh;
-  margin-left: 30rem;
+  margin: 20vh auto auto auto;
   min-height: max-content;
-  width: max-content;
   box-shadow: 0px 5px 20px 0px white;
-  max-width: 30rem;
+  max-width: 28em;
   
   
 }
@@ -25,7 +23,7 @@ body {
   display: flex;
   background-color:transparent;
   width: 23rem;
-  height: 5rem;
+  height: 10vh;
   justify-content: center;
   align-items: center;
 
@@ -39,17 +37,17 @@ body {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  width: 23rem;
+  width: 23em;
   height: 13vh;
   /* border-bottom: 1px solid rgb(169, 169, 169); */
 
 }
 .user input {
-  width: 15rem;
+  width: 20rem;
   height: 5vh;
   border: none;
   border-radius: 15px 0 0 15px;
-  margin-right: 0;
+  margin-left: 2rem;
   padding: 1rem;
 }
 input:focus{
@@ -57,14 +55,14 @@ input:focus{
 }
 .user button {
   height: 5vh;
-  width: 4rem;
+  width: 4em;
   border: none;
   background-color:rgb(199, 245, 153);
   border-radius: 0 15px 15px 0;
   margin-left: 0;
 }
 .list {
-  min-width: 23rem;
+  min-width: 23em;
   min-height: 50vh;
   max-height: max-content;
   background-color: transparent;

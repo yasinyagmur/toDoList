@@ -31,6 +31,7 @@ const mission = () => {
     }
 
     input.focus();
+    
   }
 };
 
@@ -45,3 +46,4 @@ input.addEventListener("keydown", (e) => {
     add.click();
   }
 });
+
