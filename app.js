@@ -4,7 +4,7 @@ const task = document.querySelector(".toDoApp");
 
 const mission = () => {
   if (input.value === "") {
-    alert("please enter");
+    alert("Please Enter An Event");
   } else {
     const appendli = task.appendChild(document.createElement("li"));
     appendli.innerHTML = input.value.charAt(0).toUpperCase() + input.value;
