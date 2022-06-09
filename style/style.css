@@ -62,19 +62,16 @@ body {
   line-height: 2rem;
   border-bottom: 1px solid rgb(169, 169, 169);
   padding: 0.4rem;
-
 }
 
-i.fas.fa-check{
-  margin-left: 14rem;
-}
+/* i.fas.fa-check{
+  margin-right: 1rem;
+} */
 
  i.fas.fa-check, i.fas.fa-trash-alt {
   cursor: pointer;
   transition: all 0.3s;
   padding: 0.5rem;
-  /* opacity: 0; */
-
 }
 
 i.fas.fa-check:hover {
