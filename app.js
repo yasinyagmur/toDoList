@@ -7,7 +7,7 @@ const mission = () => {
     alert("Please Enter An Event");
   } else {
     const appendli = task.appendChild(document.createElement("li"));
-    appendli.innerHTML = input.value.charAt(0).toUpperCase() + input.value;
+    appendli.innerHTML = input.value
 
     const done = appendli.appendChild(document.createElement("i"));
     // console.log(done)
